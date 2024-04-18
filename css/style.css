@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+font-family: "Jost", "Arial", sans-serif;
+    overflow: auto;
+}
+.Robo-header {
+width: 1239px;
+    margin: 0 auto;
+    background-color:rgb(20, 16, 36);
+}
+.Robo-header-div {
+    display: flex;
+}
+.Robo-header-div img {
+    display: block;
+    border: dashed 1px rgb(255, 255, 255,0.5);
+}
