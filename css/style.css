@@ -3,15 +3,116 @@ body {
 font-family: "Jost", "Arial", sans-serif;
     overflow: auto;
 }
+body a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
 .Robo-header {
-width: 1239px;
-    margin: 0 auto;
     background-color:rgb(20, 16, 36);
+}
+.main-navigation {
+    width: 1720px;
+    margin: 0 auto;
+    padding-top: 30px;
 }
 .Robo-header-div {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .Robo-header-div img {
     display: block;
     border: dashed 1px rgb(255, 255, 255,0.5);
+    box-sizing: border-box;
+}
+.navigation-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    min-width: 324px;
+    justify-content: space-between;
+
+}
+.navigation-list-item {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 160%;
+    text-align: center;
+}
+.phone-link {
+    color: rgb(255, 255, 255);
+    font-family: Jost;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 160%;
+    text-align: right;
+}
+.lead-fon-title {
+    max-width:1327px;
+    margin: 0 auto;
+}
+.title-header-div {
+    display: flex;
+    justify-content: space-between;
+}
+.description {
+    max-width: 516px;
+}
+.lead-title {
+    margin:0;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 160%;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+.description p {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 160%;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 50px;
+}
+.link-record {
+    display: flex;
+    border-radius: 5px;
+    background-color: rgb(213, 32, 39);
+    align-items: center;
+    justify-content: center;
+}
+.link-record a {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+    text-align: center;
+}
+.lead-fon {
+
+  width: 713px;
+height: 918px;
+    background-image: url("../img/student.png");
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.ellips {
+    width: 783px;
+    height: 783px;
+    box-sizing: border-box;
+    border: 80px solid rgb(255, 255, 255);
+    border-radius: 50%;
+}
+.student-fon {
+    background-color: ;
+    background-image: url("../img/student-img.jpeg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 516px;
+    height: 918px;
+    background-position: center;
+    background-clip:content-box;
 }
