@@ -7,6 +7,18 @@ body a {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 .Robo-header {
     background-color:rgb(20, 16, 36);
 }
@@ -19,6 +31,7 @@ body a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 85px;
 }
 .Robo-header-div img {
     display: block;
@@ -60,6 +73,7 @@ body a {
     max-width: 516px;
 }
 .lead-title {
+    padding-top: 182px;
     margin:0;
     font-size: 70px;
     font-weight: 600;
@@ -79,10 +93,13 @@ body a {
 }
 .link-record {
     display: flex;
+    box-sizing: border-box;
     border-radius: 5px;
     background-color: rgb(213, 32, 39);
     align-items: center;
     justify-content: center;
+    max-width: 260px;
+    padding: 25px 54px 25px 54px;
 }
 .link-record a {
     font-size: 18px;
@@ -91,28 +108,40 @@ body a {
     text-align: center;
 }
 .lead-fon {
-
-  width: 713px;
-height: 918px;
-    background-image: url("../img/student.png");
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 713px;
+    height: 918px;
+   /* background-image: url("../img/student.png");
     background-size:contain;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
+z-index: 1;
 }
 .ellips {
+    position: absolute;
+    top: 100;
+    left:-133;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 783px;
     height: 783px;
     box-sizing: border-box;
     border: 80px solid rgb(255, 255, 255);
     border-radius: 50%;
+    background-origin: border-box;
+    z-index:-1 ;
 }
-.student-fon {
-    background-color: ;
-    background-image: url("../img/student-img.jpeg");
+.lead-fon-1 {
+    position: relative;
+    background-image: url("../img/student.png");
     background-repeat: no-repeat;
     background-size:contain;
     width: 516px;
     height: 918px;
     background-position: center;
-    background-clip:content-box;
+
 }
