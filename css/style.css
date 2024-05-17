@@ -1,7 +1,7 @@
 body {
     margin: 0;
 font-family: "Jost", "Arial", sans-serif;
-    overflow: auto;
+    overflow-x: auto;
 }
 body a {
     text-decoration: none;
@@ -23,7 +23,7 @@ body a {
     background-color:rgb(20, 16, 36);
 }
 .main-navigation {
-    width: 1720px;
+max-width:1720px ;
     margin: 0 auto;
     padding-top: 30px;
 }
@@ -144,4 +144,169 @@ z-index: 1;
     height: 918px;
     background-position: center;
 
+}
+/*основное содержимое robo-main-div*/
+.robo-main-div {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+}
+.description-shcool {
+    max-width: 891px;
+    margin-bottom: 60px;
+    padding-top: 120px;
+}
+.description-shcool p {
+    margin: 0;
+    color: rgb(20, 16, 36);
+    font-family: Jost;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 160%;
+    text-align: left;
+}
+/*список претмуществ*/
+.advantages-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 120px;
+
+}
+.advantages-items {
+    max-width: 260px;
+}
+.advantages-number {
+    margin: 0;
+    color: rgb(213, 32, 39);
+    font-family: Jost;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 160%;
+    text-align: left;
+}
+.description-advantages {
+    margin: 0;
+    color: rgba(20, 16, 36, 0.7);
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+    text-align: left;
+}
+/* что получат после курсов*/
+
+.result {
+    background-color:rgb(249, 249, 249);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.result-div {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.result-title {
+    margin: 0;
+    color: rgb(20, 16, 36);
+    font-family: Jost;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 160%;
+    text-align: left;
+    margin-bottom: 60px;
+
+}
+.result-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:40px;
+}
+.result-item-title {
+    margin: 0;
+    position: relative;
+    color: rgb(20, 16, 36);
+    font-family: Jost;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 160%;
+    text-align: left;
+    margin-bottom: 19px;
+}
+/*всплывающая подсказка*/
+.result-item-title div {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url("/img/i.svg"), url("/img/Ellipse 35.png");
+    background-size: contain contain;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    top:-4;
+    left: 100;
+}
+[data-tooltip]::after {
+    content: attr(data-tooltip);
+    opacity: 0;
+    position: absolute;
+    width: 251px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 8px 0px rgba(20, 16, 36, 0.1);
+    background-color: rgb(255, 255, 255);
+    transition: 1s;
+    pointer-events: none;
+    padding: 15px 20px 15px 20px;
+    color: rgb(20, 16, 36);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    text-align: center;
+    top:-66;
+}
+
+[data-tooltip]:hover::after {
+    opacity: 1;
+}
+/*продолжение стилизации result*/
+.result-description {
+    margin: 0;
+    color: rgba(20, 16, 36, 0.7);
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+/*стили для слайдера тренеры*/
+.slider {
+    width: 1560px;
+    margin-left: 381px;
+    overflow: hidden;
+}
+.slider h2 {
+    color: rgb(20, 16, 36);
+    font-family: Jost;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 160%;
+    text-align: left;
+
+}
+.slider-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap:40px;
 }
