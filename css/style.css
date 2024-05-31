@@ -283,23 +283,26 @@ z-index: 1;
     font-size: 18px;
     font-weight: 400;
     line-height: 160%;
-    letter-spacing: 0%;
     text-align: left;
 }
 
 /*стили для слайдера тренеры*/
 .slider {
-    width: 1560px;
-    margin-left: 381px;
+    width: 1200px;
+    margin: 0 auto;
     overflow: hidden;
+    box-sizing: border-box;
+    margin-bottom: 120px;
 }
 .slider h2 {
+    margin: 0;
     color: rgb(20, 16, 36);
     font-family: Jost;
     font-size: 50px;
     font-weight: 600;
     line-height: 160%;
     text-align: left;
+    margin-bottom: 60px;
 
 }
 .slider-list {
@@ -309,4 +312,165 @@ z-index: 1;
     display: flex;
     justify-content: space-between;
     gap:40px;
+    transition: transform 0.5s ease-in-out;
+}
+.trainer-link {
+position: relative;
+    margin-bottom:20px ;
+}
+.trainer-link img {
+    position: relative;
+    margin-bottom: 20px;
+    max-width: 360px;
+    height: auto;
+}
+
+.name-trainer {
+    color: rgb(20, 16, 36);
+    font-family: Jost;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 160%;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 9px;
+}
+.about-trainer {
+    color: rgba(20, 16, 36, 0.7);
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.button-trainer {
+    border: none;
+    color: rgb(213, 32, 39);
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+    text-align: left;
+  background-color: white;
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+.trainer-link::after {
+position: absolute;
+content: "";
+width:360px;
+height:5px;
+background:linear-gradient(to right,black 75%,rgba(20, 16, 36, 0.08) 75%);
+    border-radius: 40px;
+   top:223;
+    left:0;
+    display: none;
+}
+.trainer-link:hover::after {
+    display: block;
+}
+.buttons-slider-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:16px;
+}
+.buttons-slider {
+    width: 34px;
+    height: 34px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.left-button-slider {
+    background-image: url("/img/left.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.right-button-slider {
+    background-image: url("/img/right.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+}
+/* стили для пакетов курсов*/
+.paket {
+    width: 1160px;
+    margin: 0 auto;
+}
+.list-name {
+    margin: 0;
+    color: rgb(20, 16, 36);
+    font-family: Jost;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 160%;
+    text-align: left;
+    margin-bottom: 60px;
+}
+.paket-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.paket-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    box-sizing: border-box;
+    border: 1px solid rgba(20, 16, 36, 0.2);
+    border-radius: 20px;
+    padding: 40px 0;
+}
+
+.paket-name {
+    margin: 0;
+    color: rgb(20, 16, 36);
+    font-family: Jost;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 160%;
+    text-align: center;
+    margin-bottom: 83px;
+}
+.price {
+    color: rgb(20, 16, 36);
+    font-family: Jost;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 160%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.paket-description {
+    color: rgb(20, 16, 36);
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+    text-align: center;
+    margin-bottom: 52px;
+}
+.paket-button {
+    width: 280px;
+    box-sizing: border-box;
+    padding: 25px 54px 25px 54px;
+    border-radius: 5px;
+    background-color: rgb(213, 32, 39);
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+    text-align: center;
 }
