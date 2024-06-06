@@ -20,6 +20,8 @@ body a {
     overflow: hidden;
 }
 .Robo-header {
+    max-width: 1920px;
+    margin: 0 auto;
     background-color:rgb(20, 16, 36);
 }
 .main-navigation {
@@ -201,6 +203,8 @@ z-index: 1;
 /* что получат после курсов*/
 
 .result {
+    max-width: 1920px;
+    margin: 0 auto;
     background-color:rgb(249, 249, 249);
     padding-top: 100px;
     padding-bottom: 100px;
@@ -420,6 +424,7 @@ background:linear-gradient(to right,black 75%,rgba(20, 16, 36, 0.08) 75%);
     list-style: none;
     margin: 0;
     padding: 0;
+    margin-bottom: 140px;
 }
 .paket-items {
     display: flex;
@@ -459,6 +464,7 @@ background:linear-gradient(to right,black 75%,rgba(20, 16, 36, 0.08) 75%);
     line-height: 160%;
     text-align: center;
     margin-bottom: 52px;
+    min-height: 58px;
 }
 .paket-button {
     width: 280px;
@@ -473,4 +479,97 @@ background:linear-gradient(to right,black 75%,rgba(20, 16, 36, 0.08) 75%);
     font-weight: 400;
     line-height: 160%;
     text-align: center;
+}
+ .paket-items:hover {
+    color: white;
+    background: rgb(20, 16, 36);
+     transform: scaleY(1.1);
+}
+ .paket-items:hover p {
+     color: white;
+ }
+ .paket-items:hover h3 {
+     color: white;
+ }
+ /*стили для формы*/
+.form-section {
+    max-width: 1920px;
+    background-color:rgb(213, 32, 39);
+    background-image: url("../img/procent.png");
+    background-position: bottom;
+    border-top:dashed 1px rgb(255, 255, 255,0.5) ;
+    border-bottom: dashed 1px rgb(255, 255, 255,0.5);
+    margin: 0 auto;
+
+}
+.form-div {
+    display: flex;
+    width: 1040px;
+    align-items: center;
+    margin: 0 auto;
+    gap:64px;
+}
+.promotion {
+    color: rgb(255, 255, 255);
+}
+.promotion-info {
+    color: rgb(255, 255, 255);
+    font-family: Jost;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.promotion-validity {
+    color: rgb(255, 255, 255);
+    font-family: Jost;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+    text-align: left;
+}
+.recoding-form {
+    width: 500px;
+    padding: 87 0;
+}
+.input-field {
+    display: flex;
+    flex-direction: column;
+}
+label{
+    display: none;
+}
+input {
+    width: 100%;
+    height: 64px;
+    border-radius: 5px;
+    background: rgb(246, 246, 246);
+    border: none;
+    margin-bottom: 10px;
+
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"]{
+    color: rgba(40, 41, 68, 0.7);
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    padding-left: 20px;
+
+}
+input[type="submit"] {
+    color: rgb(255, 255, 255);
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: center;
+    background: rgb(20, 16, 36);
+    margin-bottom:0;
+    cursor: pointer;
 }
