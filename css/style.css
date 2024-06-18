@@ -310,6 +310,7 @@ z-index: 1;
 
 }
 .slider-list {
+    position: relative;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -572,4 +573,61 @@ input[type="submit"] {
     background: rgb(20, 16, 36);
     margin-bottom:0;
     cursor: pointer;
+}
+.footer-div-lead {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: rgb(20, 16, 36);
+    padding: 40px 100px;
+    box-sizing: border-box;
+}
+.footer-robot img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.footer-div {
+    max-width: 1720px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo-footer {
+    display: block;
+    margin-bottom: 5px;
+}
+/*стили для модального окна*/
+.modal {
+    position: fixed;
+    max-width: 940px;
+    max-width: 768px;
+    top:30%;
+    left: 50%;
+    margin-left: -470px;
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
+}
+.modal-content {
+    border-radius: 20px;
+    position: relative;
+    padding: 40px;
+    box-shadow:0 0 20px 0 rgba(0,0,0);
+    z-index: 2;
+}
+.description-treiner {
+    box-sizing: border-box;
+    max-width: 860px;
+    display: flex;
+    align-items: flex-start;
+}
+.photo-treiner {
+    display: block;
+}
+.title-trainer {
+    margin-left: 40px;
+    margin-right: 335px;
+}
+.title-trainer  h3{
+    margin: 0;
 }
